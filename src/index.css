@@ -117,6 +117,7 @@ form {
   background-size: auto; /* adjust if needed */
   background-color: #f9fafb; /* fallback color */
   border-radius: 12px;
+  padding-bottom: 80px;
 }
 .item-list {
   padding: 30px;
