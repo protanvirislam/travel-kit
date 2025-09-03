@@ -126,8 +126,8 @@ form {
   flex-direction: row;
   gap: 10px;
   width: min(98dvw, 1100px);
-  align-items: center;
-  justify-content: space-between;
+
+  
 }
 
 /* list item container */
@@ -316,5 +316,9 @@ form {
 
   .input-form form {
     flex-direction: column;
+  }
+
+  .item-list {
+    justify-content: space-between;
   }
 }
