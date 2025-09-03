@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/protanvirislam/travel-kit/static/css/main.17bf06b2.css",
-    "main.js": "/protanvirislam/travel-kit/static/js/main.f5097466.js",
-    "index.html": "/protanvirislam/travel-kit/index.html",
-    "main.17bf06b2.css.map": "/protanvirislam/travel-kit/static/css/main.17bf06b2.css.map",
-    "main.f5097466.js.map": "/protanvirislam/travel-kit/static/js/main.f5097466.js.map"
+    "main.css": "/travel-kit/static/css/main.17bf06b2.css",
+    "main.js": "/travel-kit/static/js/main.f5097466.js",
+    "index.html": "/travel-kit/index.html",
+    "main.17bf06b2.css.map": "/travel-kit/static/css/main.17bf06b2.css.map",
+    "main.f5097466.js.map": "/travel-kit/static/js/main.f5097466.js.map"
   },
   "entrypoints": [
     "static/css/main.17bf06b2.css",
