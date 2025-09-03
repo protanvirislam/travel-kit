@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/travel-kit/static/css/main.f7cc2400.css",
-    "main.js": "/travel-kit/static/js/main.f5097466.js",
+    "main.css": "/travel-kit/static/css/main.a8672494.css",
+    "main.js": "/travel-kit/static/js/main.a084f527.js",
     "index.html": "/travel-kit/index.html",
-    "main.f7cc2400.css.map": "/travel-kit/static/css/main.f7cc2400.css.map",
-    "main.f5097466.js.map": "/travel-kit/static/js/main.f5097466.js.map"
+    "main.a8672494.css.map": "/travel-kit/static/css/main.a8672494.css.map",
+    "main.a084f527.js.map": "/travel-kit/static/js/main.a084f527.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7cc2400.css",
-    "static/js/main.f5097466.js"
+    "static/css/main.a8672494.css",
+    "static/js/main.a084f527.js"
   ]
 }
