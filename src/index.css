@@ -110,7 +110,7 @@ form {
 .dashboard {
 
   position: relative;
-  min-height: 600px; /* fixed minimum height */
+  min-height: 450px; /* fixed minimum height */
   width: 100%;
   background-image: url("https://www.transparenttextures.com/patterns/pinstripe.png");
   background-repeat: repeat;
@@ -228,7 +228,7 @@ form {
   background-color: #ffc31d;
   color: rgb(0, 0, 0);
   text-align: center;
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 }
 
 .filter-btns {

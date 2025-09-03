@@ -64,7 +64,8 @@ export default function Form() {
             type="number"
             id="quantity"
             name="quantity"
-            placeholder="1"
+            placeholder="1...."
+           
           />
 
           <input

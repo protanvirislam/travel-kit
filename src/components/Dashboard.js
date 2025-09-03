@@ -107,7 +107,7 @@ export default function Dashboard({ allItems, setAllItems }) {
       <footer className="notification">
         <p className="message">
           🧺You have {allItems.length} items on your list, and you already
-          packed {checkedItem.length} ({ allItems > 0  && checkedItem > 0 ? Math.floor(getParcent): "0"}%)
+          packed {checkedItem.length} ({checkedItem.length > 0 ? Math.floor(getParcent): "0"}%)
         </p>
       </footer>
     </div>
