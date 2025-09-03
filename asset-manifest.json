@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/travel-kit/static/css/main.3411c3eb.css",
+    "main.css": "/travel-kit/static/css/main.9d102e36.css",
     "main.js": "/travel-kit/static/js/main.4f205f6d.js",
     "index.html": "/travel-kit/index.html",
-    "main.3411c3eb.css.map": "/travel-kit/static/css/main.3411c3eb.css.map",
+    "main.9d102e36.css.map": "/travel-kit/static/css/main.9d102e36.css.map",
     "main.4f205f6d.js.map": "/travel-kit/static/js/main.4f205f6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.3411c3eb.css",
+    "static/css/main.9d102e36.css",
     "static/js/main.4f205f6d.js"
   ]
 }
