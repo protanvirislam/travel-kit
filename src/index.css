@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Water+Brush&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+:root {
+  --heading-font: "Pacifico", cursive;
+  --sub-heading-font: "Water Brush", cursive;
+  --body-font: "Lato", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  /* Desktop এ 600px, কিন্তু mobile ছোট হলে screen height অনুযায়ী adjust */
+  display: flex;
+  align-items: center;
+  background-color: #f1e9e6;
+}
+
+.col-50 {
+  width: 50%;
+}
+.banner-image {
+  text-align: center;
+}
+
+.banner-image img {
+  width: 100%;
+}
+.text-content {
+  margin-left: -90px;
+}
+
+.text-content h1 {
+  font-size: 6rem;
+  font-family: var(--heading-font);
+
+  font-weight: bolder;
+  color: #725854;
+}
+
+.text-content h2 {
+  font-size: 1.8rem;
+  font-family: var(--sub-heading-font);
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.input-form {
+  background-color: #725854;
+  color: white;
+  padding: 30px;
+}
+
+form {
+  margin: auto;
+  max-width: 1100px;
+}
+
+.input-form form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.form-title {
+  flex-basis: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input-form label {
+  display: none; /* Labels are still accessible but visually hidden */
+}
+
+.input-form input {
+  padding: 0.6rem 1rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 1rem;
+  flex: 2; /* take more space in row */
+  min-width: 250px; /* wider minimum size */
+}
+
+.input-form button {
+  padding: 0.6rem 1.2rem;
+  background-color: #ffc31d;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.input-form button:hover {
+  background-color: #005a9e;
+  color: white;
+}
+
+.dashboard {
+
+  position: relative;
+  min-height: 600px; /* fixed minimum height */
+  width: 100%;
+  background-image: url("https://www.transparenttextures.com/patterns/pinstripe.png");
+  background-repeat: repeat;
+  background-size: auto; /* adjust if needed */
+  background-color: #f9fafb; /* fallback color */
+  border-radius: 12px;
+}
+.item-list {
+  padding: 30px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  width: min(98dvw, 1100px);
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* list item container */
+.item {
+  list-style: none;
+  margin: 0.35rem 0;
+  padding: 0.45rem 0.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+/* smooth hover effect (no shifting) */
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  background: #fafafa;
+}
+
+/* left row (checkbox + text) */
+.item-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  flex: 1 1 auto; /* fill available space */
+  min-width: 0; /* allow truncation */
+  cursor: pointer;
+}
+
+/* checkbox styling */
+.is-complete {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  margin: 0;
+
+  accent-color: #8b5e3c; /* custom brown checkbox */
+  cursor: pointer;
+}
+
+/* quantity */
+.qty {
+  flex: 0 0 auto;
+  font-weight: 600;
+  color: #5b4636;
+  min-width: 36px;
+  text-align: left;
+  user-select: none;
+}
+
+/* item name (truncates if too long) */
+.name {
+  flex: 1 1 auto;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2f2f2f;
+}
+
+/* close button */
+.close {
+  flex: 0 0 auto;
+  background: #f7dfdf;
+  border: 1px solid #f0bcbc;
+  color: #7a2b2b;
+  padding: 0.35rem 0.55rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1;
+
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+/* hover effect on close button */
+.close:hover {
+  background: #f1c7c7;
+  transform: scale(1.05);
+}
+
+.notification .message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #ffc31d;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.filter-btns {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  width: min(98dvw, 1100px);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+
+/* Sort dropdown styled like a rounded button */
+.sort select {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 999px; /* fully rounded */
+  background-color: #8b5e3c; /* brown shade */
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  appearance: none; /* remove default arrow (optional) */
+}
+
+.sort select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg fill="%23fff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>')
+    no-repeat right 12px center;
+  background-color: #8b5e3c;
+  padding-right: 2rem; /* আইকনের জন্য জায়গা রাখার জন্য */
+}
+
+.sort label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  color: #4a2c1d;
+}
+
+/* Clear button styled same way */
+.clear-all {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+  background-color: #8b5e3c;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.clear-all:hover,
+.sort select:hover {
+  background-color: #6e462a; /* darker brown on hover */
+}
+
+.checked-item {
+  color: gray;
+  text-decoration-line: line-through;
+}
+
+@media only screen and (max-width: 700px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .text-content h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .text-content h2 {
+    font-size: 1rem;
+  }
+  .text-content {
+    margin: 0px;
+  }
+
+  .input-form form {
+    flex-direction: column;
+  }
+}
