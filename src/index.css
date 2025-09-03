@@ -304,11 +304,11 @@ form {
 
   .text-content h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .text-content h2 {
-    font-size: 1rem;
+    font-size: .8rem;
   }
   .text-content {
     margin: 0px;
@@ -321,4 +321,14 @@ form {
   .item-list {
     justify-content: space-between;
   }
+
+  .form-title {
+  
+    font-size: 1rem;
+
+}
+
+.filter-btns {
+  padding: 0px;
+}
 }
