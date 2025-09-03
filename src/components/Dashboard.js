@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import "../index.css";
 
 export default function Dashboard({ allItems, setAllItems }) {
@@ -107,7 +107,7 @@ export default function Dashboard({ allItems, setAllItems }) {
       <footer className="notification">
         <p className="message">
           🧺You have {allItems.length} items on your list, and you already
-          packed {checkedItem.length} ({Math.floor(getParcent)}%)
+          packed {checkedItem.length} ({ allItems > 0  && checkedItem > 0 ? Math.floor(getParcent): "0"}%)
         </p>
       </footer>
     </div>
