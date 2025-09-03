@@ -242,7 +242,7 @@ form {
   margin: 1rem 0;
   width: min(98dvw, 1100px);
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0px 40px;
 }
 
@@ -323,8 +323,7 @@ form {
   }
 
   .form-title {
-  
-    font-size: 1rem;
+    font-size: .8rem;
 
 }
 
